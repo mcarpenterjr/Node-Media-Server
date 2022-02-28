@@ -75,7 +75,7 @@ class NodeRelayServer {
     }
   }
 
-  //从远端拉推到本地
+  //Pull from remote to local
   onRelayPull(url, app, name) {
     let conf = {};
     conf.app = app;
@@ -95,7 +95,7 @@ class NodeRelayServer {
     return id;
   }
 
-  //从本地拉推到远端
+  //Pull from local to remote
   onRelayPush(url, app, name) {
     let conf = {};
     conf.app = app;
